@@ -23,6 +23,9 @@ namespace Panacea.Modularity.WebBrowsing
 
         bool IsFullscreen { get; set; }
         event EventHandler<bool> FullscreenChanged;
+
+        bool HasInvalidCertificate { get; }
+        event EventHandler<bool> HasInvalidCertificateChanged;
         
         event EventHandler<string> NewWindow;
         event EventHandler<string> ElementFocus;
