@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
+﻿using System.Collections.Generic;
 
 namespace Panacea.Modularity.WebBrowsing
 {
@@ -11,6 +6,6 @@ namespace Panacea.Modularity.WebBrowsing
     {
         void OpenUrl(string url);
 
-        FrameworkElement CreateUnmanagedTab(IWebViewManager manager, bool blockDomains = true, List<string> allowedDomains = null);
+        void OpenUnmanaged(string url, IWebViewManager manager, bool blockDomains = true, List<string> allowedDomains = null);
     }
 }
