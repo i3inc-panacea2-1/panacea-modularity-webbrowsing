@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
+using System.Windows.Media.Imaging;
 
 namespace Panacea.Modularity.WebBrowsing
 {
@@ -40,7 +41,7 @@ namespace Panacea.Modularity.WebBrowsing
 
         void Navigate(string url);
 
-        void CreateThumbnail();
+        BitmapImage CreateThumbnail();
 
         bool Focus();
 
