@@ -10,7 +10,7 @@ namespace Panacea.Modularity.WebBrowsing
             return core.PluginLoader.GetPlugin<IWebBrowserPlugin>();
         }
 
-        public static bool GetWebBrowser(this PanaceaServices core, out IWebBrowserPlugin plugin)
+        public static bool TryGetWebBrowser(this PanaceaServices core, out IWebBrowserPlugin plugin)
         {
             plugin = null;
             var webbrowser = core.PluginLoader.GetPlugins<IWebBrowserPlugin>().FirstOrDefault();
@@ -21,5 +21,6 @@ namespace Panacea.Modularity.WebBrowsing
             plugin = webbrowser;
             return true;
         }
+
     }
 }
